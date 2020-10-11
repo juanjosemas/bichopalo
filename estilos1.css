@@ -1,0 +1,210 @@
+/* El asterisco es para toda la pagina, margen, borde de las cajas... */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Desde aqui hoja de Codigos css */
+.css{
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: caveat;
+	letter-spacing: 4px;
+      text-decoration: underline;
+      font-weight: 500;
+      color: #B8C0B3;
+      text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
+}
+
+
+.fuente{
+	margin-top: 2rem;
+}
+
+.text{
+     margin-top: 2rem;
+}
+
+.propiedaddeborde{
+     margin-top: 2rem;
+}
+
+h2{
+	font-family: piedra;
+	font-size: 3rem;
+	text-indent: 40px;
+	margin: 1rem 0;
+	text-decoration: underline;
+	font-weight: 300;
+	font-style: italic;
+	color: #0054ff;
+}
+		
+p{
+	font-family: caveat;
+	font-size: 2rem;
+		  
+}
+
+p u{
+	text-decoration-color: #000000;
+	color: #ff0000;
+}
+
+.ul{
+	font-weight: 800;
+}
+
+:root{
+/* Comportamiento de desplazamiento */
+    scroll-behavior: smooth;
+}
+
+/* Todo el cuerpo de la página */
+body{
+      font-family: metal mania;
+      font-size: 4rem;
+      background-color: #a4d3ed;
+      background-color: #e1f7f7;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23e1f7f7' fill-opacity='0'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+      
+}
+
+.header{
+     background-color: #7c0b1c;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+
+}
+.contenedor{
+/* Anchura */
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+/*Margen */
+    margin: auto;
+    padding: 150px 0;
+}
+
+
+.head{
+/* Texto alineado */
+    text-align: center;
+    padding: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+/* Alinear elementos */
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.menu{
+    position: none;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    display: block;
+    top: 5px;
+}
+
+.menu ul{
+     position: none;
+     margin: 0;
+     padding: 0;
+/* Estilo de lista(quita los puntos) */
+	list-style: none;
+     display: block;
+     background-color: none;
+}
+
+.menu ul a{
+    color: #ffffff;
+    background-color: none;
+    padding: 5px 4px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0,4s linear;
+    border-radius: 5px;
+}
+
+.menu ul a:hover{
+     background: #0000ff;
+}
+
+.spread{
+     transform: translate(0);
+}
+
+
+.number{
+    display: inline-block;
+    width: 25px;
+    height: 10px;
+    color: blue;
+    text-align:center;
+    font-weight: 500;
+    line-height: none;
+}
+
+.shadow{
+		     text-shadow: 3px 3px 1px #000;
+}
+
+.show{
+    transform: translate(0);
+}
+
+
+
+
+/* Footer */
+footer{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+    height: 90vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/arbol.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: center;
+    margin: auto;
+}
+
+
+
+
+
+
+/* media querys para versiones moviles */
+@media screen and (max-width: 800px){
+    .menu{
+        width: 100vw;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+   
+}
+
+
+@media screen and (max-width: 500px){
+    
+    .menu{
+         margin-top: 5px;
+         width: 100vw;
+         font-size: 15px;
+    }
+
+}

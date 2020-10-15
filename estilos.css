@@ -246,13 +246,13 @@ a{
     color: black;
     text-align: center;
     text-shadow: 3px 3px 1px #fff, 5px 5px 2px #fff, 8px 8px 3px #fff;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slidein;
 }
 
 @keyframes slidein {
    from {
-      margin-left: 200%;
+      margin-left: 175%;
       width: 300%;
 }
     to {
@@ -268,13 +268,13 @@ a{
     font-family: caveat;
     color: black;
     text-align: center;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slideina;
 }
 
 @keyframes slideina {
     from {
-      margin-right: 100%;
+      margin-right: 175%;
       width: 300%;
 }
     to {
@@ -431,7 +431,6 @@ footer{
 		  font-size: 1.5em;
 		  margin-top: 40px;
 		  letter-spacing: 5px;
-	          text-shadow: 3px 3px 1px #4A4A4A, 5px 5px 2px #4A4A4A, 8px 8px 3px #4A4A4A;
 }
 
 .line{

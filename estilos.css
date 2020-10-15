@@ -252,7 +252,7 @@ a{
 
 @keyframes slidein {
    from {
-      margin-left: 100%;
+      margin-left: 200%;
       width: 300%;
 }
     to {

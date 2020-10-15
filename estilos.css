@@ -252,11 +252,11 @@ a{
 
 @keyframes slidein {
    from {
-      margin-right: 100%;
+      margin-left: 100%;
       width: 300%;
 }
     to {
-       margin-right: 0%;
+       margin-left: 0%;
        width: 100%;
   }
 }
@@ -274,11 +274,11 @@ a{
 
 @keyframes slideina {
     from {
-      margin-left: 100%;
+      margin-right: 100%;
       width: 300%;
 }
     to {
-       margin-left: 0%;
+       margin-right: 0%;
        width: 100%;
     }
 }

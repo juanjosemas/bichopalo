@@ -269,10 +269,10 @@ a{
     color: black;
     text-align: center;
     animation-duration: 3s;
-    animation-name: slidein1;
+    animation-name: slideina;
 }
 
-@keyframes slidein1 {
+@keyframes slideina {
     from {
       margin-left: 100%;
       width: 300%;

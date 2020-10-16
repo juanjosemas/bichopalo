@@ -331,9 +331,10 @@ a{
     letter-spacing: 2px;
 }
 
-.sitiosdeinteres:hover{
-filter: blur(5px);
+.contenedor:hover.sitiosdeinteres{
+-webkit-transform:scale(1.3);transform:scale(1.3);
 }
+.contenedor {overflow:hidden;}
 
 .number{
     display: inline-block;

@@ -380,7 +380,7 @@ a{
 	color: #ff0000;
 	font-size: 2em;
 }
-.manuales.svg: hover{filter: opacity(.5);}
+.manuales.svg: hover{filter: opacity(5);}
 
 
 

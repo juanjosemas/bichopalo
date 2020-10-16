@@ -331,6 +331,10 @@ a{
     letter-spacing: 2px;
 }
 
+.sitiosdeinteres:hover{
+filter: blur(5px);
+}
+
 .number{
     display: inline-block;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
@@ -343,9 +347,7 @@ a{
     line-height: 60px;
     margin-right: 5px;
 }
-.number:hover{
-filter: opacity(.5);
-}
+
 
 
 .showImage{

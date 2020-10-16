@@ -331,10 +331,12 @@ a{
     letter-spacing: 2px;
 }
 
-.contenedor:hover.sitiosdeinteres{
+.sitiosdeinteres:hover {
 -webkit-transform:scale(1.3);transform:scale(1.3);
 }
-.contenedor {overflow:hidden;}
+.sitiosdeinteres {
+	overflow:hidden;
+}
 
 .number{
     display: inline-block;

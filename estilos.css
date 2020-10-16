@@ -343,6 +343,9 @@ a{
     line-height: 60px;
     margin-right: 5px;
 }
+.number:hover{
+filter: opacity(.5);
+}
 
 
 .showImage{

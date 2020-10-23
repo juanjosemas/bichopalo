@@ -445,7 +445,7 @@ footer{
 	font-size: 3em;
 	letter-spacing: 10px;
 	text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
-
+        font-style: italic;
 }
 
 .brand+p{

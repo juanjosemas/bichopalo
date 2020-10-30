@@ -343,7 +343,7 @@ a{
     margin-bottom: 7px;
     color: #000000;
     letter-spacing: 2px;
-    transition: all 0.4s linear 0.2s;
+    transition: all 0.4s ease-in-out;
 }
 /*hacer grande letras al pasar el raton*/
 .sitiosdeinteres:hover{
@@ -381,7 +381,7 @@ a{
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
-    transition: all 0.4s linear 0.2s;
+    transition: all 0.4s ease-in-out;
 }
 
 .entra-das img{
@@ -391,8 +391,10 @@ a{
 }
 
 .entra-das:hover{
-		   -webkit-transform:scale(1.4);transform:scale(1.4);
+ -webkit-transform:scale(1.2);
+transform:scale(1.2);
 }
+
 
 .en-tradas{
     display: inline-block;

@@ -323,8 +323,8 @@ a{
 .img3{
 		   display: block;
 		   transition: all 1.2s ease-in-out;
-		   padding: 10px;
-		   border: 2px solid #ccc;
+		   padding: 20px;
+		   border: 4px solid #ccc;
 }
 
 .img3:hover{

@@ -173,8 +173,8 @@ a{
 
 .contenedor-titulo{
 /* Altura */
-    height: 70vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/Cafe.jpg);
+    height: 80vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/navidad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

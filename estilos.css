@@ -345,18 +345,18 @@ a{
     text-align: center;
 }
 
-/*.img3{
+.yo{
 		   display: block;
-		   transition: all 1.2s ease-in-out;
-		   padding: 10px;
+		   transition: all 0.5s ease-in-out;
+		   padding: 5px;
 }
 
-.img3:hover{
+.yo:hover{
 		  -webkit-transform: scale(1.3);
 		  transform: scale(1.3);
 }
 
-.contenedor-img3{
+/*.contenedor-img3{
      width: 1200px;
      height: 400px;
      margin: auto;

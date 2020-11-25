@@ -244,7 +244,7 @@ a{
 				border: 1px solid #000;
 				background-color: #fff;
 				animation-name: logo;
-				animation-duration: 5s;
+				animation-duration: 3s;
 				transform: rotate(0deg);
 				padding: 5px;
 				display: block;

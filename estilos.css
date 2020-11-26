@@ -269,10 +269,11 @@ a{
 }
 
 .navigation ul{
+     display: flex;
      margin: 0;
      padding: 0;
 /* Estilo de lista(quita los puntos) */
-    	list-style: none;
+    list-style: none;
 }
 
 .navigation ul li{

@@ -277,12 +277,12 @@ a{
 }
 
 .navigation ul li{
-		   display: inline-block;
+	display: flex;
 }
 
 .navigation ul li a{
     color: #ffffff;
-	display: block;
+	display: flex;
 	padding: 0 1rem;
 	border-radius: 15px;
 	transition: all 0,4s linear;

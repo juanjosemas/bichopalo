@@ -765,7 +765,7 @@ footer{
 			0% {z-index: 1;}
 
 			25% {left: 150px;}
-			50% {left: 280px;}
+			50% {left: 320px;}
 			51% {z-index: -1;}
 			75% {left: 150px;}
 			100% {left: 0; z-index: -1;}

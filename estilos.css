@@ -402,7 +402,7 @@ a{
 			animation-timing-function: linear;
 		}
 
-		.tierra{
+		#tierra{
 			background-color: black;
 			border-radius: 50%;
 			position: absolute;
@@ -410,9 +410,9 @@ a{
 			margin-right: auto;
 			padding: 0;
 			left: 0;
-			top: 960px;
-			width: 80px;
-			height: 80px;
+			top: 980px;
+			width: 50px;
+			height: 50px;
 			z-index: 1;
 			animation-name: traslacion;
 			animation-duration: 20s;
@@ -420,10 +420,11 @@ a{
 			animation-iteration-count: infinite;
 		}
 
-		.img-tierra{
+		#img-tierra{
 			animation-name: sombra;
 			animation-duration: 20s;
 			animation-timing-function: linear;
+			animation-iteration-count: infinite;
 		}
 
 

@@ -373,7 +373,7 @@ a{
 			0% {z-index: 1;}
 
 			25% {left: 950px;}
-			50% {left: 1850px;}
+			50% {left: 1840px;}
 			51% {z-index: -1;}
 			75% {left: 950px;}
 			100% {left: 0; z-index: -1;}

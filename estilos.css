@@ -398,7 +398,7 @@ a:active{
 			margin-right: auto;
 			left: 0;
 			right: 0;
-			top: 900px;
+			top: 880px;
 			width: 200px;
 			height: 200px;
 			animation-name: rotacion;
@@ -415,7 +415,7 @@ a:active{
 			margin-right: auto;
 			padding: 0;
 			left: 0;
-			top: 980px;
+			top: 960px;
 			width: 60px;
 			height: 60px;
 			z-index: 1;

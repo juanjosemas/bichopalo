@@ -305,7 +305,7 @@ a:active{
     font-family: piedra;
     color: black;
     text-align: center;
-    text-shadow: 3px 3px 1px #fff, 5px 5px 2px #fff, 8px 8px 3px #fff;
+/*   text-shadow: 3px 3px 1px #fff, 5px 5px 2px #fff, 8px 8px 3px #fff; */
     animation-duration: 5s;
     animation-name: slidein;
 }

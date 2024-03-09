@@ -8,64 +8,60 @@
 
 /* Todo el cuerpo de la página */
 body{
-      font-family: metal mania;
-     background-color: #00ffff;
-
+      font-family: "metal mania";  
+      background-color: mistyrose; 
+      /*background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/luz.jpg);*/
+      /*background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;*/
 }
+/* Cuando tocas "inicio" o "sitios de interes" la pagina baja despacio */
 :root{
-/* Comportamiento de desplazamiento */
-    scroll-behavior: smooth;
+     scroll-behavior: smooth;
 }
-.spread{
-     transform: translate(0);
-}
-/* Esto es las lineas hr */
-.linea{
-      border-top: 2px solid #ff0000;
-      border-bottom: 2px solid #000000;
-      border-right: 80px solid #000000;
-      border-left: 80px solid #000000;
-}
+
 
 a{
-	color: #000000;
-	text-decoration: underline;
-     font-weight: 500;
+     	color: #000000;
+     	text-decoration: underline;
+      font-weight: 500;
 }
+
 
 a:active{
      position: relative;
      top: 5px;	
 }
 
-
+/* Botones See More */
 .btn { 
-		cursor: pointer; 
-		display: inline-block; 
-		border-radius: 15px; 
-		font-weight: 100; 
-		padding: 10px 20px; 
-		background: #00bbff; 
-		color: #ffffff; 
-		font-size: 18px; 
-		border-bottom: 8px solid #000000;
-        border-left: 4px solid #000000;
-        transition: all 0,4s linear;
-        text-decoration: none;
-        text-shadow: 5px 4px 2px #000;
+		    cursor: pointer; 
+		    display: inline-block; 
+		    border-radius: 15px; 
+		    font-weight: 100; 
+		    padding: 10px 20px; 
+		    background: #00bbff; 
+		    color: #ffffff; 
+	    	font-size: 18px; 
+		    border-bottom: 8px solid #000000;
+     border-left: 4px solid #000000;
+     transition: all 0,4s linear;
+     text-decoration: none;
+     text-shadow: 5px 4px 2px #000;
 } 
 
 .btn:hover { 
-	opacity: 0.9;
+	    opacity: 0.9;
      color: #ff0000;
    
 } 
-
+/* Justo debajo del titulo, breve explicacion */
 .info{
-      font-size: 40px;
-	    font-family: Yellowtail;
-      margin: 20px 60px;
-}
+      font-size: 30px;
+	     font-family:Yellowtail;
+      margin: 20px 20px;
+}     
 
 .info::first-letter{
 		      color: #ff0000;
@@ -74,148 +70,63 @@ a:active{
 }
 
 /* em equivale a 16px o a lo que ponga en la caja, en el siguiente caso 20px */
-.Plugins{
-	font-family: caveat;
-	text-align: center;
-	color: #f00;
-	font-size: 3em;
-	text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
-}
 
-.Plugin{
-	font-size: 2em;
-}
 
-.caja_Plugins{
-	 font-size: 20px;
-}
 
-.Repositorios{
-	 font-family: caveat;
-	 text-align: center;
-	 color: #f00;
-	 font-size: 3em;
-	 text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
-}
 
-.Repositorio{
-	font-size: 2em;
-}
 
-.caja_Repositorios{
-	font-size: 20px;
-}
-
-.Scripts{
-	font-family: caveat;
-	text-align: center;
-	color: #f00;
-	font-size: 3em;
-	text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
-}
-
-.Script{
-	font-size: 2em;
-}
-
-.caja_Scripts{
-	font-size: 20px;
-}
-
-.Manuales{
-	font-family: caveat;
-	text-align: center;
-	color: #f00;
-	font-size: 3em;
-	text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
-}
-
-.Manuale{
-	 font-size: 2em;
-}
-
-.caja_Manuales{
-	 font-size: 20px;
-}
-
-.Fuentes{
-	 font-family: caveat;
-	 text-align: center;
-	 color: #f00;
-	 font-size: 3em;
-	 text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
-}
-
-.Fuente{
-      font-size: 2em;
-}
-
-.caja_Fuentes{
-	 font-size: 20px;
-}
-/* Menu de arriba */
+/* Menu de logo y botones */
 .header{
 	    background-color: #7c0b1c;
 	    padding: 0;
 	    position: fixed;
-	    left: 0;
+	    left: 0px ;
 	    top: 0;
 	    right: 0;
 	    width: 100%;
      height: 60px;
+     box-sizing: border-box;
 }
 
 .contenedor{
 /* Anchura */
-    width: 90%;
-    max-width: 1200px;
-    overflow: hidden;
+     width: 90%;
+     max-width: 1200px;
+     overflow: hidden;
 /*Margen */
-    margin: auto;
-    padding: 80px 0;
+     margin: auto;
+     padding: 80px 0;
+     box-sizing: border-box;
 }
 
 .contenedor-titulo{
 /* Altura */
-    height: 80vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/planetas.PNG);
+    height: 30em;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/cafe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 /* Familia tipografica */
-    font-family: metal mania;
+    font-family: "metal mania";
 /* Margen superior */
-    margin-top: 0;
+    box-sizing: border-box;
 }
 
 .fotoinfo{
-  height: 325vh;
+    height: 520vh;
     background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/muerte.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 /* Familia tipografica */
-    font-family: metal mania;
+    font-family:"metal mania";
 /* Margen superior */
     margin-top: 0;
     margin-bottom: 25px;
 }
 
-.fotoentradas{
-  height: 120vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/spiderman.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-/* Familia tipografica */
-    font-family: metal mania;
-/* Margen superior */
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
 
 .head{
 /* Texto alineado */
@@ -231,22 +142,22 @@ a:active{
 }
 
 .logo{
-		 display: flex;
-		 justify-content: space-between;
-		 align-items: center;
-		 font-size: 25px;
+		   display: flex;
+	  	 justify-content: space-between;
+		   align-items: center;
+		   font-size: 25px;
 }
-
+/* Todo lo relaccionado con el logo */
 .yo{
-				border-radius: 50%; 
-				border: 0.5px solid #000;
-				background-color: #fff;
-				animation-name: logo;
-				animation-duration: 3s;
-				transform: rotate(0deg);
-				padding: 5px;
-				display: block;
-		  transition: all 0.5s ease-in-out;
+				 border-radius: 50%; 
+			 	border: 0.5px solid #000;
+				 background-color: black;
+				 animation-name: logo;
+				 animation-duration: 3s;
+			 	transform: rotate(0deg);
+			 	padding: 5px;
+			 	display: block;
+		   transition: all 0.5s ease-in-out;
 }
 
 @keyframes logo{
@@ -271,21 +182,22 @@ a:active{
      margin: 0;
      padding: 0;
 /* Estilo de lista(quita los puntos) */
-    	list-style: none;
+     list-style: none;
 }
 
 .navigation ul li{
 		   display: flex;
 		   justify-content: space-between;
+		   margin-right: 40px ;
 		   
 }
 
 .navigation ul li a{
     color: #ffffff;
-	display: flex;
-	padding: 0 1rem;
-	border-radius: 15px;
-	transition: all 0,4s linear;
+    display: flex;
+    padding: 0 1rem;
+    border-radius: 15px;
+    transition: all 0.4s linear;
     text-decoration: none;
 }
 
@@ -305,7 +217,7 @@ a:active{
     font-family: piedra;
     color: black;
     text-align: center;
-/*   text-shadow: 3px 3px 1px #fff, 5px 5px 2px #fff, 8px 8px 3px #fff; */
+    text-shadow: 3px 3px 1px #fff, 5px 5px 2px #fff, 8px 8px 3px #fff;
     animation-duration: 5s;
     animation-name: slidein;
 }
@@ -343,7 +255,7 @@ a:active{
     }
 }
 
-/* Nuestros Servicios, los 3 que hay */
+/* Frase  Sitios dw interes */
 .subtitulo{
     text-align: center;
 /* Ancho de palabra o texto */
@@ -367,70 +279,6 @@ a:active{
     font-size: 10px;
     text-align: center;
 }
-
-@keyframes rotacion{
-			from{transform: rotateZ(0deg);}
-
-			to{transform: rotateZ(360deg);}
-		}
-
-		@keyframes traslacion{
-			0% {z-index: 1;}
-
-			25% {left: 950px;}
-			50% {left: 1835px;}
-			51% {z-index: -1;}
-			75% {left: 950px;}
-			100% {left: 0; z-index: -1;}
-		}
-
-		@keyframes sombra{
-			0%  {opacity: 1;}
-			25% {opacity: 0;}
-			50% {opacity: 1;}
-			75% {opacity: 0;}
-			100%{opacity: 1;}
-		}
-		
-		.sol{
-	  	position: absolute;
-			margin-left: auto;
-			margin-right: auto;
-			left: 0;
-			right: 0;
-			top: 880px;
-			width: 200px;
-			height: 200px;
-			animation-name: rotacion;
-			animation-duration: 20s;
-			animation-iteration-count: infinite;
-			animation-timing-function: linear;
-		}
-
-		#tierra{
-			background-color: black;
-			border-radius: 50%;
-			position: absolute;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 0;
-			left: 0;
-			top: 960px;
-			width: 60px;
-			height: 60px;
-			z-index: 1;
-			animation-name: traslacion;
-			animation-duration: 20s;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
-		}
-
-		#img-tierra{
-			animation-name: sombra;
-			animation-duration: 20s;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
-		}
 
 
 
@@ -470,64 +318,6 @@ a:active{
 }
 
 
-.showImage{
-    transform: scale(1);
-}
-
-/* seccion de entradas */
-.entradas{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center ;
-    flex-wrap: wrap;   
-}
-
-.entra-das{
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
-    transition: all 0.4s ease-in-out;
-}
-
-.entra-das img{
-    width:  80%;
-    display: inline-block;
-    margin: auto;
-    animation-name: vueltas;
-     animation-duration: 5s;
-     animation-iteration-count: infinite;
-     animation-timing-function: linear;
-}
-
-@keyframes vueltas{
-    from{
-        transform: rotateY(0deg);
- }
-    to{
-        transform: rotateY(360deg);
-    }
-}
-
-
-
-.entra-das:hover{
- -webkit-transform:scale(1.2);
-transform:scale(1.2);
-}
-
-
-.en-tradas{
-    display: inline-block;
-    margin-top: 20px;
-    width: 100%;
-    font-weight: bold;
-}
-
-.en-tradas::first-letter{
-	color: #ff0000;
-	font-size: 2em;
-}
-
 
 
 /* Footer */
@@ -535,7 +325,7 @@ footer{
     background: #9f8ad0;
     padding-bottom: 0.1px;
     height: 120vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/arbol.webp);
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/ciudad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -593,92 +383,42 @@ footer{
     margin-bottom: 60px;
 }
 
-.copyright p{
-		  text-align: center;
-		  font-family: caveat;
-		  font-size: 1.4rem;
-		  padding: 10px;
-		  margin-top: 120px;
-		  letter-spacing: 5px;
-}
-
  
 
 
 
 
 
-/* media querys para versiones moviles */
 @media screen and (max-width: 800px){
+    
     .logo{
         width: 100vw;
         text-align: center;
         font-size: 20px;
-    }
+    }  
     
     .titulo{
         font-size: 40px;
         margin-bottom: 10px;
-    }
+    }  
 
     .head{
         padding: 10px;
-    }
+    }  
     
     .contenedor-sitios img{
         width: 80%;
         margin-bottom: 40px;
-    }
+    }  
     
     .checklist-sitios{
         width: 80%;
-    }
+    } 
     
     .sitiosde{
         margin-bottom: 30px;
-    }
+    } 
       
-    .cont-entradas{
-        width: 80%;
-    }
-    
-    .footer-content{
-        justify-content: center;
-    }
-    
-    .contac-us{
-        text-align: center;
-        width: 80%;
-        padding: 0;
-    }
-    
-/*.img3{
-		   display: block;
-		   transition: all 1.2s ease-in-out;
-}
-
-.img3:hover{
-      -webkit-transform: scale(1.3);
-      transform: scale (1.3);
-}
-      
-.contenedor-img3{
-      width: 400px;
-      height: 400px;
-      margin: auto;
-      overflow: hidden;
-}*/
-
-
-
-
-.sitiosdeinteres:hover{
-		-webkit-transform:scale(1.3);
-		transform:scale(1.3);
-		  color: red;
-}
-
-}
 
 
 @media screen and (max-width: 500px){
@@ -687,13 +427,13 @@ footer{
         margin-top: 5px;
         width: 100vw;
         font-size: 15px;
-    }
-    .header{
+    } 
+   .header{
         padding: 0;
     }
     .navigation ul li a{
         padding: 0 0.5rem;
-    }
+    } 
     
     .titulo{
         font-size: 40px;
@@ -711,85 +451,16 @@ footer{
         font-size: 8px;
     }
 
-    .sitiosdeinteres{
-        font-size: 30px;
-    }
   
     .brand{
         font-size: 20px;
-    }
-    
-    .cont-entradas{
-        width: 60%;
-    }
-           
-    .contac-us{
-        width: 90%;
-    }
-    
-/*.img3{
-		   display: block;
-		   transition: all 1.2s ease-in-out;
-}
-
-.img3:hover{
-      -webkit-transform: scale(1.3);
-      transform: scale (1.3);
-}
-      
-.contenedor-img3{
-      width: 340px;
-      height: 340px;
-      margin: auto;
-      overflow: hidden;
-}*/
-
-.info{
-		     font-size: 30px;
-		     font-family: Yellowtail;
-		     margin: 20px 40px;
-}
-
-.sitiosdeinteres:hover{
-		-webkit-transform:scale(1.2);
-		transform:scale(1.2);
-		  color: red;
-}
-
-.fotoinfo{
-    height: 550vh;
-  
-}
-
-		@keyframes traslacion{
-			0% {z-index: 1;}
-      25% {left: 150px;}
-			50% {left: 320px;}
-			51% {z-index: -1;}
-			75% {left: 150px;}
-			100% {left: 0; z-index: -1;}
-		}
+    } 
+   
 		
-		.sol{
-			top: 1000px;
-			width: 125px;
-			height: 125px;
-			animation-duration: 30s;
-		}
+	
 
-		#tierra{
-		  top: 1045px;
-			width: 40px;
-			height: 40px;
-		  animation-duration: 10s;
-		}
-
-		#img-tierra{
-			animation-name: sombra;
-			animation-duration: 10s;
-			animation-timing-function: linear;
-		}
+	
 
     
     
-}
+

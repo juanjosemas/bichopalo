@@ -1,0 +1,66 @@
+body, html {
+    margin: 5px;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('img/campo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*Titulo de la pagina */
+.titulo{
+    margin: 0;
+    font-family: Piedra;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.70);
+    border: 4px double red;
+    border-radius: 15px;
+    background-color: #007bff; /*aqua;*/
+}
+
+/* Grueso de la pagina */
+.css{
+    padding: 0;
+    font-family: Lobster;
+    font-size: 20px;
+}
+/* Concepto de la palabra css */
+#conceptos{
+    color: black;
+    padding: 0;
+}
+
+/* La palabra a usar en css */
+#conceptos u{
+    color: darkmagenta;
+}
+
+/* Situacion de los dos botones, input y buscar */
+.botones{
+    padding: 15px 0 15px 0;
+}
+
+/* Boton buscar */
+#buscarBoton{
+    font-size: 20px;
+    font-family: Piedra;
+    font-style: italic;
+    border-radius: 15px;
+    border: 3px solid red;
+    box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.70);
+}
+
+/* Input para ingresar palabra a buscar */
+#buscarInput{
+    font-size: 20px;
+    font-family: Piedra;
+    font-style: italic;
+    width: 240px;
+    border-radius: 10px;
+    border: 3px solid #007bff;
+    box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.70);
+}

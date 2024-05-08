@@ -5,17 +5,12 @@
     box-sizing: border-box;
 }
 
-
 /* Todo el cuerpo de la página */
 body{
       font-family: "metal mania";  
       background-color: mistyrose; 
-      /*background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/luz.jpg);*/
-      /*background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;*/
 }
+
 /* Cuando tocas "inicio" o "sitios de interes" la pagina baja despacio */
 :root{
      scroll-behavior: smooth;
@@ -157,7 +152,7 @@ a:active{
 			 	transform: rotate(0deg);
 			 	padding: 5px;
 			 	display: block;
-		   transition: all 0.5s ease-in-out;
+		  transition: all 0.5s ease-in-out;
 }
 
 @keyframes logo{
@@ -255,7 +250,7 @@ a:active{
     }
 }
 
-/* Frase  Sitios dw interes */
+/* Frase  Sitios de interes */
 .subtitulo{
     text-align: center;
 /* Ancho de palabra o texto */

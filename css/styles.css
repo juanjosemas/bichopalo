@@ -27,6 +27,7 @@ body, html {
     padding: 0;
     font-family: Lobster;
     font-size: 20px;
+    text-indent: 25px;
 }
 /* Concepto de la palabra css */
 #conceptos{
@@ -37,6 +38,7 @@ body, html {
 /* La palabra a usar en css */
 #conceptos u{
     color: darkmagenta;
+    /*text-transform: capitalize;*/
 }
 
 /* Situacion de los dos botones, input y buscar */

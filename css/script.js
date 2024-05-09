@@ -10,7 +10,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Función para buscar la palabra ingresada en el input
     function buscar(inputText) {
-        var conceptos = document.querySelectorAll("#conceptos u"); // Obtener todos los elementos <u> dentro de la lista de conceptos
+        var conceptosU = document.querySelectorAll("#conceptos u"); // Obtener todos los elementos <u> dentro de la lista de conceptos
+        var conceptosP = document.querySelectorAll("#conceptos p"); // Obtener todos los elementos <p> dentro de la lista de conceptos
+
+        // Restaurar los colores originales antes de realizar una nueva búsqueda
+        conceptosU.forEach(function(concepto) {
+            concepto.style.color = ""; // Restaurar el color original del elemento <u>
+        });
+
+        conceptosP.forEach(function(concepto) {
+            concepto.style.color = ""; // Restaurar el color original del elemento <p>
+        });
 
         // Verificar si se ingresó texto en el input
         if (inputText === "") {
@@ -18,26 +28,30 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // Iterar sobre cada elemento <u> para buscar la palabra ingresada
-        var encontradoIndex = -1;
-        conceptos.forEach(function(concepto, index) {
+        conceptosU.forEach(function(concepto) {
             var textoConcepto = concepto.textContent.toLowerCase(); // Obtener el texto dentro del elemento <u> en minúsculas
-            if (textoConcepto.includes(inputText.toLowerCase())) { // Verificar si el texto ingresado se encuentra dentro del texto del concepto
-                encontradoIndex = index;
+            var expresion = new RegExp('\\b' + inputText.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'g'); // Expresión regular para buscar la palabra completa
+            if (expresion.test(textoConcepto)) { // Verificar si la palabra coincide con la búsqueda
+                concepto.style.color = "red"; // Resaltar la palabra encontrada en rojo
+                setTimeout(function() {
+                    concepto.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Desplazar la página hacia la palabra encontrada
+                }, 100);
             }
         });
 
-        // Si la palabra no se encontró en ningún concepto, mostrar un mensaje de alerta
-        if (encontradoIndex === -1) {
-            alert("La palabra no se encontró en la lista de conceptos.");
-            return;
-        }
+        // Iterar sobre cada elemento <p> para buscar la palabra ingresada
+        conceptosP.forEach(function(concepto) {
+            var textoConcepto = concepto.textContent.toLowerCase(); // Obtener el texto dentro del elemento <p> en minúsculas
+            var expresion = new RegExp('\\b' + inputText.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'g'); // Expresión regular para buscar la palabra completa
+            if (expresion.test(textoConcepto)) { // Verificar si la palabra coincide con la búsqueda
+                concepto.style.color = "blue"; // Resaltar la palabra encontrada en azul
+                setTimeout(function() {
+                    concepto.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Desplazar la página hacia la palabra encontrada
+                }, 100);
+            }
+        });
 
-        // Limpiar el contenido del input
+        // Limpiar el contenido del input después de buscar
         inputBuscar.value = "";
-
-        // Desplazar la página hacia el elemento que contiene la palabra buscada después de un breve retraso
-        setTimeout(function() {
-            conceptos[encontradoIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 100);
     }
 });

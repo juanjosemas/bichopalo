@@ -64,12 +64,6 @@ a:active{
 	       text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
 }
 
-/* em equivale a 16px o a lo que ponga en la caja, en el siguiente caso 20px */
-
-
-
-
-
 /* Menu de logo y botones */
 .header{
 	    background-color: #7c0b1c;
@@ -81,78 +75,78 @@ a:active{
 	    width: 100%;
      height: 60px;
      box-sizing: border-box;
+     /* === AÑADIDO PARA ALINEAR BIEN EL CONTENIDO === */
+     display: flex;
+     justify-content: center;
 }
 
 .contenedor{
-/* Anchura */
      width: 90%;
      max-width: 1200px;
      overflow: hidden;
-/*Margen */
      margin: auto;
      padding: 80px 0;
      box-sizing: border-box;
 }
 
 .contenedor-titulo{
-/* Altura */
     height: 30em;
+    padding-top: 60px; /* Añadido para que el título no quede debajo del header fijo */
     background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/Cafe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-/* Familia tipografica */
     font-family: "metal mania";
-/* Margen superior */
     box-sizing: border-box;
 }
 
 .fotoinfo{
-    height: 520vh;
+    height: auto; 
+    padding-top: 60px; /* Añadido para que el subtítulo no quede debajo del header */
+    padding-bottom: 50px;
     background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/muerte.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-/* Familia tipografica */
     font-family:"metal mania";
-/* Margen superior */
     margin-top: 0;
     margin-bottom: 25px;
 }
 
 
 .head{
-/* Texto alineado */
     text-align: center;
-    padding: 80px;
+    padding: 80px 0; /* Ajustado el padding */
     height: 100%;
     display: flex;
     justify-content: center;
-/* Alinear elementos */
     align-items: center;
     flex-direction: column;
     color: #fff;
 }
 
 .logo{
-		   display: flex;
-	  	 justify-content: space-between;
-		   align-items: center;
-		   font-size: 25px;
+    /* === CAMBIOS PARA ALINEAR LOGO, MENÚ Y RELOJ === */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    width: 100%; /* Ocupa todo el ancho del header */
+    padding: 0 15px; /* Pequeño espacio en los bordes */
 }
-/* Todo lo relaccionado con el logo */
+
 .yo{
-				 border-radius: 50%; 
-			 	border: 0.5px solid #000;
-				 background-color: black;
-				 animation-name: logo;
-				 animation-duration: 3s;
-			 	transform: rotate(0deg);
-			 	padding: 5px;
-			 	display: block;
-		  transition: all 0.5s ease-in-out;
+	border-radius: 50%; 
+	border: 0.5px solid #000;
+	background-color: black;
+	animation-name: logo;
+	animation-duration: 3s;
+	transform: rotate(0deg);
+	padding: 5px;
+	display: block;
+	transition: all 0.5s ease-in-out;
 }
 
 @keyframes logo{
@@ -168,23 +162,21 @@ a:active{
 }
 
 .yo:hover{
-		  -webkit-transform: scale(1.3);
-		  transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 .navigation ul{
      display: flex;
      margin: 0;
      padding: 0;
-/* Estilo de lista(quita los puntos) */
      list-style: none;
 }
 
 .navigation ul li{
-		   display: flex;
-		   justify-content: space-between;
-		   margin-right: 40px ;
-		   
+	display: flex;
+	justify-content: space-between;
+	margin-right: 40px ;
 }
 
 .navigation ul li a{
@@ -201,13 +193,9 @@ a:active{
      color: red;
 }
 
-
-
-/* Titulo pagina principal */
 .titulo{
     font-weight: 200;
     font-size: 80px;
-/* Margen inferior */
     margin-bottom: 50px;
     font-family: piedra;
     color: black;
@@ -228,7 +216,6 @@ a:active{
  }
 }
 
-/* Subtitulo de la pagina principal */
 .copy{
     width: 100%;
     font-size: 2em;
@@ -250,18 +237,14 @@ a:active{
     }
 }
 
-/* Frase  Sitios de interes */
 .subtitulo{
     text-align: center;
-/* Ancho de palabra o texto */
     font-weight: 500;
     color: #ff0000;
     margin-bottom: 40px;
     font-size: 80px;
     font-family: Yellowtail;
-  /* espacio entre letras de una palabra */
     letter-spacing: 6px;
-  /* palabra subrayada */
     text-decoration: none;
     text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
 }
@@ -275,14 +258,14 @@ a:active{
     text-align: center;
 }
 
-
-
-/* Explicacion de "Sitios de interes" */
 .sitiosde{
     margin-bottom: 20px;
     color: #000000;
 }
 
+.sitio-item {
+    margin-bottom: 60px; 
+}
 
 .sitiosdeinteres{
     font-size: 2rem;
@@ -292,11 +275,10 @@ a:active{
     transition: all 0.4s ease-in-out;
 }
 
-/*hacer grande letras al pasar el raton*/
 .sitiosdeinteres:hover{
-		-webkit-transform:scale(1.4);
-		transform:scale(1.4);
-		  color: red;
+	-webkit-transform:scale(1.4);
+	transform:scale(1.4);
+	color: red;
 }
 
 .number{
@@ -312,14 +294,10 @@ a:active{
     margin-right: 5px;
 }
 
-
-
-
-/* Footer */
 footer{
     background: #9f8ad0;
-    padding: 0;
-    height: 120vh;
+    padding: 0; /* === CAMBIO: Usar padding en vez de altura fija === */
+    height: auto; 
     background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/ciudad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -332,7 +310,7 @@ footer{
     font-size: 25px;
     font-style: italic;
     color: black;
-    margin: -50px 0 20px 0;
+    margin-bottom: 20px; /* Ajustado */
 }
 
 .programa{
@@ -341,22 +319,6 @@ footer{
     font-size: 20px;
     text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
     margin: 20px 0;
-}
-
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-}
-
-.contac-us{
-    width: 80%;
-    color:#fff;
-    text-align: center;
-    margin: 5px auto;
 }
 
 .brand{
@@ -374,119 +336,82 @@ footer{
 	font-style: italic;
 }
 
-.brand+p{
-    font-weight: 500;
-}
 
-.prs{
-		  font-size: 1.5em;
-		  margin-top: 40px;
-		  letter-spacing: 5px;
-}
-
-.line{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 2px;
-    background: #fff;
-    margin-bottom: 60px;
-}
-
-
+/* === CÓDIGO DEL RELOJ ACTUALIZADO Y MÁS SEGURO === */
 .reloj{
     font-family: Lobster;
     color: white;
     text-align: center;
-    position: absolute;
-    left: 14%;
-    top: 55%;
     font-size: 16px;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.1em; /* Un poco menos de espacio para que quepa mejor */
     text-decoration: underline;
     text-decoration-color: blue;
     font-style: italic;
     font-weight: bold;
+    /* === ELIMINADAS LAS REGLAS DE POSITION: ABSOLUTE === */
 }
 
- 
 
-
-
-
+/* === MEDIA QUERIES REVISADAS === */
 
 @media screen and (max-width: 800px){
-    
     .logo{
-        width: 100vw;
-        text-align: center;
         font-size: 20px;
+        /* Hacemos que el reloj se oculte en pantallas medianas para dar espacio al menú */
+    }
+    .reloj {
+        display: none;
     }  
     
     .titulo{
-        font-size: 40px;
+        font-size: 50px; /* Un poco más grande que antes */
         margin-bottom: 10px;
     }  
 
     .head{
         padding: 10px;
     }  
-    
-    .contenedor-sitios img{
-        width: 80%;
-        margin-bottom: 40px;
-    }  
-    
-    .checklist-sitios{
-        width: 80%;
-    } 
-    
-    .sitiosde{
-        margin-bottom: 30px;
-    } 
-      
+
+    .subtitulo {
+        font-size: 60px;
+    }
+}
 
 
 @media screen and (max-width: 500px){
-    
-    .logo{
-        margin-top: 5px;
-        width: 100vw;
-        font-size: 15px;
-    } 
-   .header{
-        padding: 0;
+    .navigation ul{
+        /* En pantallas pequeñas, separamos menos los elementos del menú */
+        flex-direction: row;
+        gap: 10px;
+    }
+    .navigation ul li{
+        margin-right: 0; /* Quitamos el margen derecho */
     }
     .navigation ul li a{
         padding: 0 0.5rem;
     } 
+    .logo {
+        /* Para que el logo no ocupe tanto y deje espacio al menú */
+        flex-grow: 0;
+    }
     
     .titulo{
         font-size: 40px;
     }
     
    .copy{
-   		    font-size: 1.6em;
-   		}
+   		font-size: 1.6em;
+   }
     
     .subtitulo{
-        font-size: 50px;
+        font-size: 45px; /* Más pequeño para móviles */
     }
     
     .contenedor-sitios{
         font-size: 8px;
     }
-
   
     .brand{
         font-size: 20px;
     } 
-   
-		
-	
-
-	
-
-    
-    
-
+}

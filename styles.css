@@ -49,8 +49,32 @@ a:active{
 .btn:hover { 
 	    opacity: 0.9;
      color: #ff0000;
-   
 } 
+
+/* Botones de los programas */
+.btn2 { 
+		    cursor: pointer; 
+		    display: inline-block; 
+		    border-radius: 15px; 
+		    font-weight: 100; 
+		    padding: 10px 20px; 
+		    background: blue;/*#00bbff; */
+		    color:white;
+	    	font-size: 22px; 
+		    border-bottom: 8px solid #000000;
+     border-left: 4px solid #000000;
+     transition: all 0,4s linear;
+     text-decoration: none;
+     text-shadow: 0px 0px 0px #000;
+} 
+
+.btn2:hover { 
+	    opacity: 0.9;
+     color: #ff0000;
+} 
+
+
+
 /* Justo debajo del titulo, breve explicacion */
 .info{
       font-size: 30px;
@@ -296,7 +320,7 @@ a:active{
 
 footer{
     background: #9f8ad0;
-    padding: 0; /* === CAMBIO: Usar padding en vez de altura fija === */
+    padding: 10px 0; /* === CAMBIO: Usar padding en vez de altura fija === */
     height: auto; 
     background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/ciudad.jpg);
     background-repeat: no-repeat;

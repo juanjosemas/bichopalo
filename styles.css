@@ -57,6 +57,7 @@ a:active{
 		    display: inline-block; 
 		    border-radius: 15px; 
 		    font-weight: 100; 
+		    font-style: italic;
 		    padding: 10px 20px; 
 		    background: #00bb;
 		    color:white;
@@ -335,14 +336,6 @@ footer{
     font-style: italic;
     color: black;
     margin-bottom: 20px; /* Ajustado */
-}
-
-.programa{
-    color: white;
-    font-style: italic;
-    font-size: 20px;
-    text-shadow: 3px 3px 1px #000, 5px 5px 2px #000, 8px 8px 3px #000;
-    margin: 20px 0;
 }
 
 .brand{

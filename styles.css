@@ -58,7 +58,8 @@ a:active{
 		    border-radius: 15px; 
 		    font-weight: 100; 
 		    font-style: italic;
-		    padding: 10px 20px; 
+		    padding: 5px 15px;
+		    margin: 3px;
 		    background: #00bb;
 		    color:white;
 	    	font-size: 22px; 

@@ -131,7 +131,7 @@ a:active{
     height: auto; 
     padding-top: 60px; /* Añadido para que el subtítulo no quede debajo del header */
     padding-bottom: 50px;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/muerte.jpg);
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.50) 0%, rgba(251, 194, 235, 0.5) 100%), url(img/mujer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
